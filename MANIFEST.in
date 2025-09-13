@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include pylint_comfyui *.py
+exclude venv
+exclude .git*
+exclude *.pyc
+exclude __pycache__
