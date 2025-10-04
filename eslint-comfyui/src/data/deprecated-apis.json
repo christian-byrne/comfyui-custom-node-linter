@@ -1,0 +1,1428 @@
+{
+  "extractedAt": "2025-10-02T21:25:02.958Z",
+  "totalCount": 201,
+  "sources": [
+    "/home/c_byrne/projects/comfyui-frontend-testing/ComfyUI_frontend-clone-20/src",
+    "/home/c_byrne/projects/comfyui-frontend-testing/ComfyUI_frontend/src"
+  ],
+  "deprecatedApis": {
+    "functions": [
+      {
+        "name": "serialise",
+        "reason": "Format not in use anywhere else.",
+        "file": "utils/vintageClipboard.ts",
+        "line": 13,
+        "context": "export function serialise(nodes: LGraphNode[], graph: LGraph): string {"
+      },
+      {
+        "name": "onExecuted",
+        "reason": "groupNode",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 98,
+        "context": "onExecuted?(output: any): void onNodeCreated?(this: LGraphNode): void setInnerNodes?(nodes: LGraphNode[]): void /** Originally a group node API. */"
+      },
+      {
+        "name": "onExecuted",
+        "reason": "No reason provided",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 98,
+        "context": "onExecuted?(output: any): void onNodeCreated?(this: LGraphNode): void setInnerNodes?(nodes: LGraphNode[]): void /** Originally a group node API. */"
+      },
+      {
+        "name": "subgraphs",
+        "reason": "groupNode",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 107,
+        "context": "subgraphs?: Set<LGraphNode> ): ExecutableLGraphNode[] convertToNodes?(): LGraphNode[] recreate?(): Promise<LGraphNode>"
+      },
+      {
+        "name": "subgraphs",
+        "reason": "No reason provided",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 107,
+        "context": "subgraphs?: Set<LGraphNode> ): ExecutableLGraphNode[] convertToNodes?(): LGraphNode[] recreate?(): Promise<LGraphNode>"
+      },
+      {
+        "name": "recreate",
+        "reason": "groupNode",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 111,
+        "context": "recreate?(): Promise<LGraphNode> refreshComboInNode?(defs: Record<string, ComfyNodeDef>) updateLink?(link: LLink): LLink | null /**"
+      },
+      {
+        "name": "recreate",
+        "reason": "No reason provided",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 111,
+        "context": "recreate?(): Promise<LGraphNode> refreshComboInNode?(defs: Record<string, ComfyNodeDef>) updateLink?(link: LLink): LLink | null /**"
+      },
+      {
+        "name": "updateLink",
+        "reason": "primitive node.",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 114,
+        "context": "updateLink?(link: LLink): LLink | null /**"
+      },
+      {
+        "name": "pointerDown",
+        "reason": "No longer needed as we use {@link useImagePreviewWidget}",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 174,
+        "context": "pointerDown?: { index: number | null; pos: Point } | null /** setSizeForImage?(force?: boolean): void"
+      },
+      {
+        "name": "setSizeForImage",
+        "reason": "Unused",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 177,
+        "context": "setSizeForImage?(force?: boolean): void inputHeight?: unknown"
+      },
+      {
+        "name": "setSizeForImage",
+        "reason": "No reason provided",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 177,
+        "context": "setSizeForImage?(force?: boolean): void inputHeight?: unknown"
+      },
+      {
+        "name": "registerSidebarTab",
+        "reason": "Use `sidebarTab.registerSidebarTab` instead.",
+        "file": "stores/workspaceStore.ts",
+        "line": 63,
+        "context": "function registerSidebarTab(tab: SidebarTabExtension) {"
+      },
+      {
+        "name": "unregisterSidebarTab",
+        "reason": "Use `sidebarTab.unregisterSidebarTab` instead.",
+        "file": "stores/workspaceStore.ts",
+        "line": 72,
+        "context": "function unregisterSidebarTab(id: string) {"
+      },
+      {
+        "name": "getSidebarTabs",
+        "reason": "Use `sidebarTab.sidebarTabs` instead.",
+        "file": "stores/workspaceStore.ts",
+        "line": 81,
+        "context": "function getSidebarTabs(): SidebarTabExtension[] {"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `inputs` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 48,
+        "context": "readonly api_node: boolean /** readonly input: ComfyInputSpecV1"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 52,
+        "context": "readonly input: ComfyInputSpecV1 /** readonly output: ComfyOutputSpecV1"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs[n].is_list` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 56,
+        "context": "readonly output: ComfyOutputSpecV1 /** readonly output_is_list?: boolean[]"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs[n].name` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 60,
+        "context": "readonly output_is_list?: boolean[] /** readonly output_name?: string[]"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs[n].tooltip` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 64,
+        "context": "readonly output_name?: string[] /** readonly output_tooltips?: string[]"
+      },
+      {
+        "name": "const",
+        "reason": "For backward compatibility - stores the primary executing node ID",
+        "file": "stores/executionStore.ts",
+        "line": 140,
+        "context": "}) const executingNodeId = computed<NodeId | null>(() => { return executingNodeIds.value.length > 0 ? executingNodeIds.value[0] : null"
+      },
+      {
+        "name": "const",
+        "reason": "For backward compatibility - stores the primary executing node ID",
+        "file": "stores/executionStore.ts",
+        "line": 140,
+        "context": "}) const executingNodeId = computed<NodeId | null>(() => { return executingNodeIds.value.length > 0 ? executingNodeIds.value[0] : null"
+      },
+      {
+        "name": "addDrawBackgroundHandler",
+        "reason": "No longer needed as we use {@link useImagePreviewWidget}",
+        "file": "services/litegraphService.ts",
+        "line": 847,
+        "context": "function addDrawBackgroundHandler(node: typeof LGraphNode) { /** node.prototype.setSizeForImage = function (this: LGraphNode) {"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use `applyTextReplacements` from `@/utils/searchAndReplace` instead",
+        "file": "scripts/utils.ts",
+        "line": 21,
+        "context": "/**"
+      },
+      {
+        "name": "margin",
+        "reason": "Use `afterResize` instead. This callback is a legacy API",
+        "file": "scripts/domWidget.ts",
+        "line": 97,
+        "context": "margin?: number /**"
+      },
+      {
+        "name": "get",
+        "reason": "Use useExecutionStore().lastNodeErrors instead",
+        "file": "scripts/app.ts",
+        "line": 194,
+        "context": "/** get lastNodeErrors(): Record<NodeId, NodeError> | null {"
+      },
+      {
+        "name": "get",
+        "reason": "Use useExecutionStore().lastExecutionError instead",
+        "file": "scripts/app.ts",
+        "line": 202,
+        "context": "/** get lastExecutionError(): ExecutionErrorWsMessage | null {"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use useExecutionStore().executingNodeId instead",
+        "file": "scripts/app.ts",
+        "line": 209,
+        "context": "/**"
+      },
+      {
+        "name": "get",
+        "reason": "Use useWorkspaceStore().shiftDown instead",
+        "file": "scripts/app.ts",
+        "line": 218,
+        "context": "/** get shiftDown(): boolean {"
+      },
+      {
+        "name": "get",
+        "reason": "Use useWidgetStore().widgets instead",
+        "file": "scripts/app.ts",
+        "line": 225,
+        "context": "/** get widgets(): Record<string, ComfyWidgetConstructor> {"
+      },
+      {
+        "name": "unknown",
+        "reason": "storageLocation is always 'server' since",
+        "file": "scripts/app.ts",
+        "line": 232,
+        "context": "/**"
+      },
+      {
+        "name": "get",
+        "reason": "storage migration is no longer needed.",
+        "file": "scripts/app.ts",
+        "line": 240,
+        "context": "/** get isNewUserSession() {"
+      },
+      {
+        "name": "get",
+        "reason": "Use useExtensionStore().extensions instead",
+        "file": "scripts/app.ts",
+        "line": 247,
+        "context": "/** get extensions(): ComfyExtension[] {"
+      },
+      {
+        "name": "get",
+        "reason": "Use useExecutionStore().executingNodeProgress instead",
+        "file": "scripts/app.ts",
+        "line": 255,
+        "context": "/** get progress() {"
+      },
+      {
+        "name": "static",
+        "reason": "Use {@link isImageNode} from @/utils/litegraphUtil instead",
+        "file": "scripts/app.ts",
+        "line": 262,
+        "context": "/** static isImageNode(node: LGraphNode) {"
+      },
+      {
+        "name": "resetView",
+        "reason": "Use {@link useLitegraphService().resetView} instead",
+        "file": "scripts/app.ts",
+        "line": 270,
+        "context": "/** resetView() {"
+      },
+      {
+        "name": "override",
+        "reason": "Use {@link dispatchCustomEvent}.",
+        "file": "scripts/api.ts",
+        "line": 381,
+        "context": "} override dispatchEvent(event: never): boolean { return super.dispatchEvent(event)"
+      },
+      {
+        "name": "override",
+        "reason": "No reason provided",
+        "file": "scripts/api.ts",
+        "line": 381,
+        "context": "} override dispatchEvent(event: never): boolean { return super.dispatchEvent(event)"
+      },
+      {
+        "name": "get",
+        "reason": "Use `settingStore.settingValues` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 30,
+        "context": "/** get settingsValues() {"
+      },
+      {
+        "name": "get",
+        "reason": "Use `settingStore.settingsById` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 37,
+        "context": "/** get settingsLookup() {"
+      },
+      {
+        "name": "get",
+        "reason": "Use `settingStore.settingsById` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 44,
+        "context": "/** get settingsParamLookup() {"
+      },
+      {
+        "name": "getSettingValue",
+        "reason": "Use `settingStore.get` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 51,
+        "context": "/** getSettingValue<K extends keyof Settings>("
+      },
+      {
+        "name": "getSettingDefaultValue",
+        "reason": "Use `settingStore.getDefaultValue` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 66,
+        "context": "/** getSettingDefaultValue<K extends keyof Settings>("
+      },
+      {
+        "name": "async",
+        "reason": "Use `settingStore.set` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 75,
+        "context": "/** async setSettingValueAsync<K extends keyof Settings>("
+      },
+      {
+        "name": "setSettingValue",
+        "reason": "Use `settingStore.set` instead.",
+        "file": "scripts/ui/settings.ts",
+        "line": 85,
+        "context": "/** setSettingValue<K extends keyof Settings>(id: K, value: Settings[K]) {"
+      },
+      {
+        "name": "unknown",
+        "reason": "Deprecated for external callers/extensions. Use",
+        "file": "scripts/ui/settings.ts",
+        "line": 98,
+        "context": "/**"
+      },
+      {
+        "name": "const",
+        "reason": "Use `zComboInputSpecV2` instead.",
+        "file": "schemas/nodeDefSchema.ts",
+        "line": 102,
+        "context": "/** const zComboInputSpec = z.tuple(["
+      },
+      {
+        "name": "Math",
+        "reason": "Use step2 instead. The 10x value is a legacy implementation.",
+        "file": "renderer/extensions/vueNodes/widgets/composables/useFloatWidget.ts",
+        "line": 72,
+        "context": "? Math.pow(10, -precision) : (inputSpec.round as number), step: step * 10.0, step2: step,"
+      },
+      {
+        "name": "Math",
+        "reason": "No reason provided",
+        "file": "renderer/extensions/vueNodes/widgets/composables/useFloatWidget.ts",
+        "line": 72,
+        "context": "? Math.pow(10, -precision) : (inputSpec.round as number), step: step * 10.0, step2: step,"
+      },
+      {
+        "name": "event",
+        "reason": "Context menu scrolling is now controlled by the browser",
+        "file": "lib/litegraph/src/interfaces.ts",
+        "line": 408,
+        "context": "event?: MouseEvent extra?: TExtra scroll_speed?: number left?: number"
+      },
+      {
+        "name": "event",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/interfaces.ts",
+        "line": 408,
+        "context": "event?: MouseEvent extra?: TExtra scroll_speed?: number left?: number"
+      },
+      {
+        "name": "left",
+        "reason": "Context menus no longer scale using transform",
+        "file": "lib/litegraph/src/interfaces.ts",
+        "line": 412,
+        "context": "left?: number top?: number scale?: number node?: LGraphNode"
+      },
+      {
+        "name": "left",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/interfaces.ts",
+        "line": 412,
+        "context": "left?: number top?: number scale?: number node?: LGraphNode"
+      },
+      {
+        "name": "The",
+        "reason": "This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly",
+        "file": "lib/litegraph/src/draw.ts",
+        "line": 37,
+        "context": "/** The radius of the rounded corners for {@link RenderShape.ROUND} and {@link RenderShape.CARD} */ round_radius?: number title_height?: number /** @deprecated This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly */"
+      },
+      {
+        "name": "The",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/draw.ts",
+        "line": 37,
+        "context": "/** The radius of the rounded corners for {@link RenderShape.ROUND} and {@link RenderShape.CARD} */ round_radius?: number title_height?: number /** @deprecated This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly */"
+      },
+      {
+        "name": "Shape",
+        "reason": "This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly",
+        "file": "lib/litegraph/src/draw.ts",
+        "line": 39,
+        "context": "/** Shape will extend above the Y-axis 0 by this amount @deprecated This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly */ title_height?: number title_mode?: TitleMode /** The color that should be drawn */"
+      },
+      {
+        "name": "Shape",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/draw.ts",
+        "line": 39,
+        "context": "/** Shape will extend above the Y-axis 0 by this amount @deprecated This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly */ title_height?: number title_mode?: TitleMode /** The color that should be drawn */"
+      },
+      {
+        "name": "The",
+        "reason": "This is node-specific: it should be removed entirely, and behaviour defined by the caller more explicitly",
+        "file": "lib/litegraph/src/draw.ts",
+        "line": 45,
+        "context": "/** The distance between the edge of the {@link area} and the middle of the line */ padding?: number collapsed?: boolean /** Thickness of the line drawn (`lineWidth`) */"
+      },
+      {
+        "name": "The",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/draw.ts",
+        "line": 45,
+        "context": "/** The distance between the edge of the {@link area} and the middle of the line */ padding?: number collapsed?: boolean /** Thickness of the line drawn (`lineWidth`) */"
+      },
+      {
+        "name": "nodetypes",
+        "reason": "used for dropping files in the canvas.  It appears the code that enables this was removed, but the object remains and is references by built-in drag drop.",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 153,
+        "context": "/** nodetypes by string */ registered_node_types: Record<string, typeof LGraphNode> = {} node_types_by_file_extension: Record<string, { type: string }> = {} /** node types by classname */"
+      },
+      {
+        "name": "nodetypes",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 153,
+        "context": "/** nodetypes by string */ registered_node_types: Record<string, typeof LGraphNode> = {} node_types_by_file_extension: Record<string, { type: string }> = {} /** node types by classname */"
+      },
+      {
+        "name": "Globals",
+        "reason": "Unused and will be deleted.",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 160,
+        "context": "Globals = {} searchbox_extras: Dictionary<unknown> = {}"
+      },
+      {
+        "name": "Globals",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 160,
+        "context": "Globals = {} searchbox_extras: Dictionary<unknown> = {}"
+      },
+      {
+        "name": "unknown",
+        "reason": "Removed; has no effect.",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 287,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Removed; has no effect.",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 296,
+        "context": "/**"
+      },
+      {
+        "name": "cloneObject",
+        "reason": "Prefer {@link structuredClone}",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 656,
+        "context": "cloneObject<T extends object | undefined | null>( obj: T,"
+      },
+      {
+        "name": "cloneObject",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LiteGraphGlobal.ts",
+        "line": 656,
+        "context": "cloneObject<T extends object | undefined | null>( obj: T,"
+      },
+      {
+        "name": "static",
+        "reason": "Use {@link LLink.create}",
+        "file": "lib/litegraph/src/LLink.ts",
+        "line": 177,
+        "context": "} static createFromArray(data: SerialisedLLinkArray): LLink { return new LLink(data[0], data[5], data[1], data[2], data[3], data[4])"
+      },
+      {
+        "name": "static",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LLink.ts",
+        "line": 177,
+        "context": "} static createFromArray(data: SerialisedLLinkArray): LLink { return new LLink(data[0], data[5], data[1], data[2], data[3], data[4])"
+      },
+      {
+        "name": "unknown",
+        "reason": "Prefer {@link LLink.asSerialisable} (returns an object, not an array)",
+        "file": "lib/litegraph/src/LLink.ts",
+        "line": 478,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use {@link getSlotOnPos} instead.",
+        "file": "lib/litegraph/src/LGraphNode.ts",
+        "line": 2101,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use {@link getInputPos} or {@link getOutputPos} instead.",
+        "file": "lib/litegraph/src/LGraphNode.ts",
+        "line": 3169,
+        "context": "/**"
+      },
+      {
+        "name": "captureInput",
+        "reason": "Use {@link LGraphCanvas.pointer} instead.",
+        "file": "lib/litegraph/src/LGraphNode.ts",
+        "line": 3337,
+        "context": "/** captureInput(v: boolean): void {"
+      },
+      {
+        "name": "get",
+        "reason": "@inheritdoc {@link LGraphCanvasState.readOnly}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 361,
+        "context": "get read_only(): boolean { return this.state.readOnly"
+      },
+      {
+        "name": "get",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 361,
+        "context": "get read_only(): boolean { return this.state.readOnly"
+      },
+      {
+        "name": "get",
+        "reason": "Replace all references with {@link pointer}.{@link CanvasPointer.isDown isDown}.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 388,
+        "context": "} get pointer_is_down() { return this.pointer.isDown"
+      },
+      {
+        "name": "get",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 388,
+        "context": "} get pointer_is_down() { return this.pointer.isDown"
+      },
+      {
+        "name": "get",
+        "reason": "Replace all references with {@link pointer}.{@link CanvasPointer.isDouble isDouble}.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 393,
+        "context": "} get pointer_is_double() { return this.pointer.isDouble"
+      },
+      {
+        "name": "get",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 393,
+        "context": "} get pointer_is_double() { return this.pointer.isDouble"
+      },
+      {
+        "name": "get",
+        "reason": "@inheritdoc {@link LGraphCanvasState.draggingCanvas}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 398,
+        "context": "} get dragging_canvas(): boolean { return this.state.draggingCanvas"
+      },
+      {
+        "name": "get",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 398,
+        "context": "} get dragging_canvas(): boolean { return this.state.draggingCanvas"
+      },
+      {
+        "name": "get",
+        "reason": "Use {@link LGraphNode.titleFontStyle} instead.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 409,
+        "context": "/** get title_text_font(): string {"
+      },
+      {
+        "name": "get",
+        "reason": "Use {@link LiteGraphGlobal.ROUND_RADIUS} instead.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 433,
+        "context": "/** get round_radius() {"
+      },
+      {
+        "name": "set",
+        "reason": "Use {@link LiteGraphGlobal.ROUND_RADIUS} instead.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 440,
+        "context": "/** set round_radius(value: number) {"
+      },
+      {
+        "name": "mouse",
+        "reason": "LEGACY: REMOVE THIS, USE {@link graph_mouse} INSTEAD",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 567,
+        "context": "/** mouse in graph coordinates, where 0,0 is the top-left corner of the blue rectangle */ readonly graph_mouse: Point canvas_mouse: Point /** to personalize the search box */"
+      },
+      {
+        "name": "mouse",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 567,
+        "context": "/** mouse in graph coordinates, where 0,0 is the top-left corner of the blue rectangle */ readonly graph_mouse: Point canvas_mouse: Point /** to personalize the search box */"
+      },
+      {
+        "name": "Contains",
+        "reason": "Replaced by {@link renderedPaths}, but length is set to 0 by some extensions.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 589,
+        "context": "/** Contains all links and reroutes that were rendered.  Repopulated every render cycle. */ renderedPaths: Set<LinkSegment> = new Set() visible_links: LLink[] = [] /** @deprecated This array is populated and cleared to support legacy extensions. The contents are ignored by Litegraph. */"
+      },
+      {
+        "name": "Contains",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 589,
+        "context": "/** Contains all links and reroutes that were rendered.  Repopulated every render cycle. */ renderedPaths: Set<LinkSegment> = new Set() visible_links: LLink[] = [] /** @deprecated This array is populated and cleared to support legacy extensions. The contents are ignored by Litegraph. */"
+      },
+      {
+        "name": "deprecated",
+        "reason": "This array is populated and cleared to support legacy extensions. The contents are ignored by Litegraph.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 591,
+        "context": "/** @deprecated Replaced by {@link renderedPaths}, but length is set to 0 by some extensions. */ visible_links: LLink[] = [] connecting_links: ConnectingLink[] | null linkConnector = new LinkConnector((links) => (this.connecting_links = links))"
+      },
+      {
+        "name": "deprecated",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 591,
+        "context": "/** @deprecated Replaced by {@link renderedPaths}, but length is set to 0 by some extensions. */ visible_links: LLink[] = [] connecting_links: ConnectingLink[] | null linkConnector = new LinkConnector((links) => (this.connecting_links = links))"
+      },
+      {
+        "name": "render_time",
+        "reason": "See {@link LGraphCanvas.selectedItems}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 602,
+        "context": "render_time = 0 fps = 0 selected_nodes: Dictionary<LGraphNode> = {} /** All selected nodes, groups, and reroutes */"
+      },
+      {
+        "name": "render_time",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 602,
+        "context": "render_time = 0 fps = 0 selected_nodes: Dictionary<LGraphNode> = {} /** All selected nodes, groups, and reroutes */"
+      },
+      {
+        "name": "The",
+        "reason": "See {@link LGraphCanvas.selectedItems}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 608,
+        "context": "/** The group currently being resized. */ resizingGroup: LGraphGroup | null = null selected_group: LGraphGroup | null = null /** The nodes that are currently visible on the canvas. */"
+      },
+      {
+        "name": "The",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 608,
+        "context": "/** The group currently being resized. */ resizingGroup: LGraphGroup | null = null selected_group: LGraphGroup | null = null /** The nodes that are currently visible on the canvas. */"
+      },
+      {
+        "name": "dirty_nodes",
+        "reason": "Unused",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 628,
+        "context": "dirty_nodes = new Map<NodeId, LGraphNode>() dirty_area?: Rect | null node_in_panel?: LGraphNode | null last_mouse: ReadOnlyPoint = [0, 0]"
+      },
+      {
+        "name": "dirty_nodes",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 628,
+        "context": "dirty_nodes = new Map<NodeId, LGraphNode>() dirty_area?: Rect | null node_in_panel?: LGraphNode | null last_mouse: ReadOnlyPoint = [0, 0]"
+      },
+      {
+        "name": "bgctx",
+        "reason": "Panels",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 651,
+        "context": "bgctx?: CanvasRenderingContext2D | null is_rendering?: boolean block_click?: boolean /** @deprecated Panels */"
+      },
+      {
+        "name": "bgctx",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 651,
+        "context": "bgctx?: CanvasRenderingContext2D | null is_rendering?: boolean block_click?: boolean /** @deprecated Panels */"
+      },
+      {
+        "name": "deprecated",
+        "reason": "Panels",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 653,
+        "context": "/** @deprecated Panels */ block_click?: boolean last_click_position?: Point | null resizing_node?: LGraphNode | null"
+      },
+      {
+        "name": "deprecated",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 653,
+        "context": "/** @deprecated Panels */ block_click?: boolean last_click_position?: Point | null resizing_node?: LGraphNode | null"
+      },
+      {
+        "name": "last_click_position",
+        "reason": "See {@link LGraphCanvas.resizingGroup}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 656,
+        "context": "last_click_position?: Point | null resizing_node?: LGraphNode | null selected_group_resizing?: boolean /** @deprecated See {@link pointer}.{@link CanvasPointer.dragStarted dragStarted} */"
+      },
+      {
+        "name": "last_click_position",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 656,
+        "context": "last_click_position?: Point | null resizing_node?: LGraphNode | null selected_group_resizing?: boolean /** @deprecated See {@link pointer}.{@link CanvasPointer.dragStarted dragStarted} */"
+      },
+      {
+        "name": "deprecated",
+        "reason": "See {@link pointer}.{@link CanvasPointer.dragStarted dragStarted}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 658,
+        "context": "/** @deprecated See {@link LGraphCanvas.resizingGroup} */ selected_group_resizing?: boolean last_mouse_dragging?: boolean onMouseDown?: (arg0: CanvasPointerEvent) => void"
+      },
+      {
+        "name": "deprecated",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 658,
+        "context": "/** @deprecated See {@link LGraphCanvas.resizingGroup} */ selected_group_resizing?: boolean last_mouse_dragging?: boolean onMouseDown?: (arg0: CanvasPointerEvent) => void"
+      },
+      {
+        "name": "_highlight_input",
+        "reason": "Panels",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 664,
+        "context": "_highlight_input?: INodeInputSlot node_panel?: any /** @deprecated Panels */"
+      },
+      {
+        "name": "_highlight_input",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 664,
+        "context": "_highlight_input?: INodeInputSlot node_panel?: any /** @deprecated Panels */"
+      },
+      {
+        "name": "deprecated",
+        "reason": "Panels",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 666,
+        "context": "/** @deprecated Panels */ node_panel?: any options_panel?: any _bg_img?: HTMLImageElement"
+      },
+      {
+        "name": "deprecated",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 666,
+        "context": "/** @deprecated Panels */ node_panel?: any options_panel?: any _bg_img?: HTMLImageElement"
+      },
+      {
+        "name": "prompt_box",
+        "reason": "Panels",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 675,
+        "context": "prompt_box?: PromptDialog | null search_box?: HTMLDivElement SELECTED_NODE?: LGraphNode /** @deprecated Panels */"
+      },
+      {
+        "name": "prompt_box",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 675,
+        "context": "prompt_box?: PromptDialog | null search_box?: HTMLDivElement SELECTED_NODE?: LGraphNode /** @deprecated Panels */"
+      },
+      {
+        "name": "deprecated",
+        "reason": "Panels",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 677,
+        "context": "/** @deprecated Panels */ SELECTED_NODE?: LGraphNode NODEPANEL_IS_OPEN?: boolean"
+      },
+      {
+        "name": "deprecated",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 677,
+        "context": "/** @deprecated Panels */ SELECTED_NODE?: LGraphNode NODEPANEL_IS_OPEN?: boolean"
+      },
+      {
+        "name": "onAfterChange",
+        "reason": "Does not handle multi-node move, and can return the wrong node.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 704,
+        "context": "onAfterChange?(graph: LGraph): void onClear?: () => void onNodeMoved?: (node_dragged: LGraphNode | undefined) => void /** @deprecated Called with the deprecated {@link selected_nodes} when the selection changes. Replacement not yet impl. */"
+      },
+      {
+        "name": "onAfterChange",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 704,
+        "context": "onAfterChange?(graph: LGraph): void onClear?: () => void onNodeMoved?: (node_dragged: LGraphNode | undefined) => void /** @deprecated Called with the deprecated {@link selected_nodes} when the selection changes. Replacement not yet impl. */"
+      },
+      {
+        "name": "called",
+        "reason": "Called with the deprecated {@link selected_nodes} when the selection changes. Replacement not yet impl.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 706,
+        "context": "/** called after moving a node @deprecated Does not handle multi-node move, and can return the wrong node. */ onNodeMoved?: (node_dragged: LGraphNode | undefined) => void onSelectionChange?: (selected: Dictionary<Positionable>) => void /** called when rendering a tooltip */"
+      },
+      {
+        "name": "called",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 706,
+        "context": "/** called after moving a node @deprecated Does not handle multi-node move, and can return the wrong node. */ onNodeMoved?: (node_dragged: LGraphNode | undefined) => void onSelectionChange?: (selected: Dictionary<Positionable>) => void /** called when rendering a tooltip */"
+      },
+      {
+        "name": "this",
+        "reason": "Workaround: Keep until connecting_links is removed.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 768,
+        "context": ") this.linkConnector.events.addEventListener('reset', () => { this.connecting_links = null"
+      },
+      {
+        "name": "this",
+        "reason": "Workaround: Keep until connecting_links is removed.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 768,
+        "context": ") this.linkConnector.events.addEventListener('reset', () => { this.connecting_links = null"
+      },
+      {
+        "name": "unknown",
+        "reason": "Functionality moved to {@link getBoundaryNodes}.  The new function returns null on failure, instead of an object with all null properties.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 969,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Functionality moved to {@link alignNodes}.  The new function does not set dirty canvas.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 989,
+        "context": "/**"
+      },
+      {
+        "name": "static",
+        "reason": "*/",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 1350,
+        "context": "} static decodeHTML(str: string): string { const e = document.createElement('div')"
+      },
+      {
+        "name": "static",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 1350,
+        "context": "} static decodeHTML(str: string): string { const e = document.createElement('div')"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use {@link LGraphNode.getWidgetOnPos} instead.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 2138,
+        "context": ""
+      },
+      {
+        "name": "processNodeSelected",
+        "reason": "See {@link LGraphCanvas.processSelect}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4245,
+        "context": "} processNodeSelected(item: LGraphNode, e: CanvasPointerEvent): void { this.processSelect("
+      },
+      {
+        "name": "processNodeSelected",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4245,
+        "context": "} processNodeSelected(item: LGraphNode, e: CanvasPointerEvent): void { this.processSelect("
+      },
+      {
+        "name": "selectNode",
+        "reason": "See {@link LGraphCanvas.select}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4254,
+        "context": "} selectNode(node: LGraphNode, add_to_current_selection?: boolean): void { if (node == null) {"
+      },
+      {
+        "name": "selectNode",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4254,
+        "context": "} selectNode(node: LGraphNode, add_to_current_selection?: boolean): void { if (node == null) {"
+      },
+      {
+        "name": "selectNodes",
+        "reason": "See {@link LGraphCanvas.selectItems}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4291,
+        "context": "/** selectNodes(nodes?: LGraphNode[], add_to_current_selection?: boolean): void {"
+      },
+      {
+        "name": "deselectNode",
+        "reason": "See {@link LGraphCanvas.deselect}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4297,
+        "context": "} deselectNode(node: LGraphNode): void { this.deselect(node)"
+      },
+      {
+        "name": "deselectNode",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4297,
+        "context": "} deselectNode(node: LGraphNode): void { this.deselect(node)"
+      },
+      {
+        "name": "deselectAllNodes",
+        "reason": "See {@link LGraphCanvas.deselectAll}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4361,
+        "context": "} deselectAllNodes(): void { this.deselectAll()"
+      },
+      {
+        "name": "deselectAllNodes",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4361,
+        "context": "} deselectAllNodes(): void { this.deselectAll()"
+      },
+      {
+        "name": "deleteSelectedNodes",
+        "reason": "See {@link LGraphCanvas.deleteSelected}",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 4405,
+        "context": "/** deleteSelectedNodes(): void {"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use {@link LGraphNode.drawWidgets} instead.",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 6019,
+        "context": "/**"
+      },
+      {
+        "name": "getGroupMenuOptions",
+        "reason": "*/",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 8181,
+        "context": "} getGroupMenuOptions(group: LGraphGroup) { console.warn("
+      },
+      {
+        "name": "getGroupMenuOptions",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphCanvas.ts",
+        "line": 8181,
+        "context": "} getGroupMenuOptions(group: LGraphGroup) { console.warn("
+      },
+      {
+        "name": "Configuration",
+        "reason": "Legacy config - unused",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 84,
+        "context": "/** Configuration used by {@link LGraph} `config`. */ export interface LGraphConfig { align_to_grid?: any links_ontop?: any"
+      },
+      {
+        "name": "Configuration",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 84,
+        "context": "/** Configuration used by {@link LGraph} `config`. */ export interface LGraphConfig { align_to_grid?: any links_ontop?: any"
+      },
+      {
+        "name": "execution_timer_id",
+        "reason": "Unused",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 181,
+        "context": "execution_timer_id?: number | null errors_in_execution?: boolean execution_time!: number _last_trigger_time?: number"
+      },
+      {
+        "name": "execution_timer_id",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 181,
+        "context": "execution_timer_id?: number | null errors_in_execution?: boolean execution_time!: number _last_trigger_time?: number"
+      },
+      {
+        "name": "get",
+        "reason": "See {@link state}.{@link LGraphState.lastNodeId lastNodeId}",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 231,
+        "context": "} get last_node_id() { return this.state.lastNodeId"
+      },
+      {
+        "name": "get",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 231,
+        "context": "} get last_node_id() { return this.state.lastNodeId"
+      },
+      {
+        "name": "get",
+        "reason": "See {@link state}.{@link LGraphState.lastLinkId lastLinkId}",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 240,
+        "context": "} get last_link_id() { return this.state.lastLinkId"
+      },
+      {
+        "name": "get",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 240,
+        "context": "} get last_link_id() { return this.state.lastLinkId"
+      },
+      {
+        "name": "unknown",
+        "reason": "Will be removed in 0.9",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 415,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Will be removed in 0.9",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 460,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Will be removed in 0.9",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 766,
+        "context": "/**"
+      },
+      {
+        "name": "sendActionToCanvas",
+        "reason": "See {@link LGraph.canvasAction}",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 808,
+        "context": "} sendActionToCanvas<T extends MethodNames<LGraphCanvas>>( action: T,"
+      },
+      {
+        "name": "sendActionToCanvas",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 808,
+        "context": "} sendActionToCanvas<T extends MethodNames<LGraphCanvas>>( action: T,"
+      },
+      {
+        "name": "unknown",
+        "reason": "Will be removed in 0.9",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 1159,
+        "context": "/**"
+      },
+      {
+        "name": "unknown",
+        "reason": "Use {@link asSerialisable}, which returns the newer schema version.",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 1993,
+        "context": "/**"
+      },
+      {
+        "name": "mouseDrag",
+        "reason": "Has not been kept up to date",
+        "file": "lib/litegraph/src/DragAndScale.ts",
+        "line": 142,
+        "context": "} mouseDrag(x: number, y: number): void { this.offset[0] += x / this.scale"
+      },
+      {
+        "name": "mouseDrag",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/DragAndScale.ts",
+        "line": 142,
+        "context": "} mouseDrag(x: number, y: number): void { this.offset[0] += x / this.scale"
+      },
+      {
+        "name": "static",
+        "reason": "Likely unused, however code search was inconclusive (too many results to check by hand).",
+        "file": "lib/litegraph/src/ContextMenu.ts",
+        "line": 366,
+        "context": "} static trigger("
+      },
+      {
+        "name": "static",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/ContextMenu.ts",
+        "line": 366,
+        "context": "} static trigger("
+      },
+      {
+        "name": "static",
+        "reason": "Unused.",
+        "file": "lib/litegraph/src/ContextMenu.ts",
+        "line": 391,
+        "context": "} static isCursorOverElement( event: MouseEvent,"
+      },
+      {
+        "name": "static",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/ContextMenu.ts",
+        "line": 391,
+        "context": "} static isCursorOverElement( event: MouseEvent,"
+      },
+      {
+        "name": "read_only",
+        "reason": "Use {@link IWidgetOptions.step2} instead.",
+        "file": "lib/litegraph/src/types/widgets.ts",
+        "line": 15,
+        "context": "read_only?: boolean /**"
+      },
+      {
+        "name": "unknown",
+        "reason": "There is no longer dynamic y adjustment on rendering anymore.",
+        "file": "lib/litegraph/src/types/widgets.ts",
+        "line": 286,
+        "context": ""
+      },
+      {
+        "name": "unknown",
+        "reason": "Use {@link IBaseWidget.computeLayoutSize} instead.",
+        "file": "lib/litegraph/src/types/widgets.ts",
+        "line": 352,
+        "context": ""
+      },
+      {
+        "name": "void",
+        "reason": "Use {@link dispatch}.",
+        "file": "lib/litegraph/src/infrastructure/CustomEventTarget.ts",
+        "line": 29,
+        "context": "): void dispatchEvent(event: never): boolean }"
+      },
+      {
+        "name": "void",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/infrastructure/CustomEventTarget.ts",
+        "line": 29,
+        "context": "): void dispatchEvent(event: never): boolean }"
+      },
+      {
+        "name": "override",
+        "reason": "Use {@link dispatch}.",
+        "file": "lib/litegraph/src/infrastructure/CustomEventTarget.ts",
+        "line": 129,
+        "context": "} override dispatchEvent(event: never): boolean { return super.dispatchEvent(event)"
+      },
+      {
+        "name": "override",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/infrastructure/CustomEventTarget.ts",
+        "line": 129,
+        "context": "} override dispatchEvent(event: never): boolean { return super.dispatchEvent(event)"
+      },
+      {
+        "name": "unknown",
+        "reason": "Widget to socket conversion is no longer necessary, as they co-exist now.",
+        "file": "extensions/core/widgetInputs.ts",
+        "line": 421,
+        "context": "/**"
+      },
+      {
+        "name": "setSizeForImage",
+        "reason": "Unused",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 68,
+        "context": "setSizeForImage?(force?: boolean): void inputHeight?: unknown"
+      },
+      {
+        "name": "setSizeForImage",
+        "reason": "No reason provided",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 68,
+        "context": "setSizeForImage?(force?: boolean): void inputHeight?: unknown"
+      },
+      {
+        "name": "inputHeight",
+        "reason": "Unused",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 71,
+        "context": "inputHeight?: unknown imageOffset?: number /** Set by DOM widgets */"
+      },
+      {
+        "name": "inputHeight",
+        "reason": "No reason provided",
+        "file": "types/litegraph-augmentation.d.ts",
+        "line": 71,
+        "context": "inputHeight?: unknown imageOffset?: number /** Set by DOM widgets */"
+      },
+      {
+        "name": "registerSidebarTab",
+        "reason": "Use `sidebarTab.registerSidebarTab` instead.",
+        "file": "stores/workspaceStore.ts",
+        "line": 37,
+        "context": "function registerSidebarTab(tab: SidebarTabExtension) {"
+      },
+      {
+        "name": "unregisterSidebarTab",
+        "reason": "Use `sidebarTab.unregisterSidebarTab` instead.",
+        "file": "stores/workspaceStore.ts",
+        "line": 46,
+        "context": "function unregisterSidebarTab(id: string) {"
+      },
+      {
+        "name": "getSidebarTabs",
+        "reason": "Use `sidebarTab.sidebarTabs` instead.",
+        "file": "stores/workspaceStore.ts",
+        "line": 55,
+        "context": "function getSidebarTabs(): SidebarTabExtension[] {"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `inputs` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 167,
+        "context": "readonly output_node: boolean /** readonly input: ComfyInputsSpecSchema"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 171,
+        "context": "readonly input: ComfyInputsSpecSchema /** readonly output: ComfyOutputTypesSpecSchema"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs[n].is_list` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 175,
+        "context": "readonly output: ComfyOutputTypesSpecSchema /** readonly output_is_list?: boolean[]"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs[n].name` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 179,
+        "context": "readonly output_is_list?: boolean[] /** readonly output_name?: string[]"
+      },
+      {
+        "name": "readonly",
+        "reason": "Use `outputs[n].tooltip` instead",
+        "file": "stores/nodeDefStore.ts",
+        "line": 183,
+        "context": "readonly output_name?: string[] /** readonly output_tooltips?: string[]"
+      },
+      {
+        "name": "get",
+        "reason": "Use useExecutionStore().executingNodeId instead",
+        "file": "scripts/app.ts",
+        "line": 149,
+        "context": "/** get runningNodeId(): string | null {"
+      },
+      {
+        "name": "get",
+        "reason": "Use useWorkspaceStore().shiftDown instead",
+        "file": "scripts/app.ts",
+        "line": 156,
+        "context": "/** get shiftDown(): boolean {"
+      },
+      {
+        "name": "get",
+        "reason": "Use useWidgetStore().widgets instead",
+        "file": "scripts/app.ts",
+        "line": 163,
+        "context": "/** get widgets(): Record<string, ComfyWidgetConstructor> {"
+      },
+      {
+        "name": "unknown",
+        "reason": "storageLocation is always 'server' since",
+        "file": "scripts/app.ts",
+        "line": 173,
+        "context": "/**"
+      },
+      {
+        "name": "get",
+        "reason": "storage migration is no longer needed.",
+        "file": "scripts/app.ts",
+        "line": 181,
+        "context": "/** get isNewUserSession() {"
+      },
+      {
+        "name": "getWidgetType",
+        "reason": "Use useWidgetStore().getWidgetType instead",
+        "file": "scripts/app.ts",
+        "line": 1832,
+        "context": "/** getWidgetType(inputData, inputName: string) {"
+      },
+      {
+        "name": "dispatchEvent",
+        "reason": "Use {@link dispatchCustomEvent}.",
+        "file": "scripts/api.ts",
+        "line": 244,
+        "context": "} dispatchEvent(event: never): boolean { return super.dispatchEvent(event)"
+      },
+      {
+        "name": "dispatchEvent",
+        "reason": "No reason provided",
+        "file": "scripts/api.ts",
+        "line": 244,
+        "context": "} dispatchEvent(event: never): boolean { return super.dispatchEvent(event)"
+      },
+      {
+        "name": "Promise",
+        "reason": "Use `listUserDataFullInfo` instead.",
+        "file": "scripts/api.ts",
+        "line": 815,
+        "context": "): Promise<string[]> /** async listUserData(dir: string, recurse: boolean, split?: boolean) {"
+      },
+      {
+        "name": "serialise",
+        "reason": "Format not in use anywhere else.",
+        "file": "extensions/core/vintageClipboard.ts",
+        "line": 10,
+        "context": "export function serialise(nodes: LGraphNode[], graph: LGraph): string {"
+      }
+    ],
+    "classes": [],
+    "properties": [],
+    "constants": [],
+    "types": [],
+    "imports": [],
+    "propertys": [
+      {
+        "name": "element",
+        "reason": "Legacy property used by some extensions for customtext",
+        "file": "scripts/domWidget.ts",
+        "line": 44,
+        "context": "element: T /**"
+      },
+      {
+        "name": "min",
+        "reason": "Use step2 instead. The 10x value is a legacy implementation.",
+        "file": "renderer/extensions/vueNodes/widgets/composables/useIntWidget.ts",
+        "line": 67,
+        "context": "min: inputSpec.min ?? 0, max: inputSpec.max ?? 2048, step: step * 10, step2: step,"
+      },
+      {
+        "name": "min",
+        "reason": "No reason provided",
+        "file": "renderer/extensions/vueNodes/widgets/composables/useIntWidget.ts",
+        "line": 67,
+        "context": "min: inputSpec.min ?? 0, max: inputSpec.max ?? 2048, step: step * 10, step2: step,"
+      },
+      {
+        "name": "_pos",
+        "reason": "See {@link _children}",
+        "file": "lib/litegraph/src/LGraphGroup.ts",
+        "line": 52,
+        "context": "_pos: Point = this._bounding.subarray(0, 2) _size: Size = this._bounding.subarray(2, 4) _nodes: LGraphNode[] = [] _children: Set<Positionable> = new Set()"
+      },
+      {
+        "name": "_pos",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphGroup.ts",
+        "line": 52,
+        "context": "_pos: Point = this._bounding.subarray(0, 2) _size: Size = this._bounding.subarray(2, 4) _nodes: LGraphNode[] = [] _children: Set<Positionable> = new Set()"
+      },
+      {
+        "name": "iteration",
+        "reason": "Unused",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 171,
+        "context": "iteration: number = 0 globaltime: number = 0 runningtime: number = 0 fixedtime: number = 0"
+      },
+      {
+        "name": "iteration",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 171,
+        "context": "iteration: number = 0 globaltime: number = 0 runningtime: number = 0 fixedtime: number = 0"
+      },
+      {
+        "name": "extra",
+        "reason": "Deserialising a workflow sets this unused property.",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 193,
+        "context": "extra: LGraphExtra = {} version?: number"
+      },
+      {
+        "name": "extra",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraph.ts",
+        "line": 193,
+        "context": "extra: LGraphExtra = {} version?: number"
+      }
+    ],
+    "classs": [
+      {
+        "name": "Vector2",
+        "reason": "Use {@link Point} instead.",
+        "file": "lib/litegraph/src/litegraph.ts",
+        "line": 23,
+        "context": "export type Vector2 = Point"
+      },
+      {
+        "name": "Vector2",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/litegraph.ts",
+        "line": 23,
+        "context": "export type Vector2 = Point"
+      },
+      {
+        "name": "ConnectByTypeOptions",
+        "reason": "Events",
+        "file": "lib/litegraph/src/LGraphNode.ts",
+        "line": 110,
+        "context": "interface ConnectByTypeOptions { createEventInCase?: boolean /** Allow our wildcard slot to connect to typed slots on remote node. Default: true */"
+      },
+      {
+        "name": "ConnectByTypeOptions",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/LGraphNode.ts",
+        "line": 110,
+        "context": "interface ConnectByTypeOptions { createEventInCase?: boolean /** Allow our wildcard slot to connect to typed slots on remote node. Default: true */"
+      },
+      {
+        "name": "LegacyMouseEvent",
+        "reason": "Part of DragAndScale mouse API - incomplete / not maintained",
+        "file": "lib/litegraph/src/types/events.ts",
+        "line": 39,
+        "context": "interface LegacyMouseEvent { dragging?: boolean click_time?: number"
+      },
+      {
+        "name": "LegacyMouseEvent",
+        "reason": "No reason provided",
+        "file": "lib/litegraph/src/types/events.ts",
+        "line": 39,
+        "context": "interface LegacyMouseEvent { dragging?: boolean click_time?: number"
+      }
+    ]
+  }
+}
