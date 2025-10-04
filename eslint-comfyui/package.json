@@ -1,0 +1,74 @@
+{
+  "name": "eslint-plugin-comfyui",
+  "version": "0.1.0",
+  "description": "ESLint plugin to enforce ComfyUI coding standards and best practices for web development",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "comfyui",
+    "typescript",
+    "javascript",
+    "frontend",
+    "web",
+    "standards",
+    "code-quality"
+  ],
+  "author": "ComfyUI Team <support@comfy.org>",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:integration": "npm run build && jest tests/integration",
+    "test:plugin": "npm run build && node scripts/test-plugin.js",
+    "test:all": "npm run test && npm run test:integration && npm run test:plugin",
+    "extract-deprecated-apis": "node scripts/extract-deprecated-apis.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^7.0.0",
+    "glob": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.3.0",
+    "vue-eslint-parser": "^10.2.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comfyui/standards-bot.git",
+    "directory": "eslint-comfyui"
+  },
+  "bugs": {
+    "url": "https://github.com/comfyui/standards-bot/issues"
+  },
+  "homepage": "https://github.com/comfyui/standards-bot#readme",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  }
+}
